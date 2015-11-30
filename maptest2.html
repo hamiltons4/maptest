@@ -1,0 +1,60 @@
+<head>
+  <title>maptest2</title>
+</head>
+
+<body>
+ 
+  <div class="span5">
+       <div style="float: right">
+         {{> loginButtons align="right"}}
+      </div>
+  </div>
+
+
+ 
+{{> MapDemoIndex}}
+  
+</body>
+
+<template name="MapDemoIndex">
+  {{#if showCreateDialog}}
+    {{> createDialog}}
+  {{/if}}
+
+  {{#if showInviteDialog}}
+    {{> inviteDialog}}
+  {{/if}}
+
+  <div class="map-row">
+      {{> mapCanvas}}
+  </div>
+</template>
+
+
+
+<template name="mapCanvas">
+    <h1>Search example:</h1>
+    <form action="">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input class="form-control" id="address" type="text">
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <button type="submit" class="btn btn-default btn-md">Search:</button>
+            </div>
+          </div>
+        </div>
+    </form>
+    <div id="map-canvas" class="map-canvas"></div>
+
+    <div>
+  <h5>Search input and marker drag and drop choose address</h5>
+      <pre>
+        <code>
+        </code>
+      </pre>
+    </div>
+</template>

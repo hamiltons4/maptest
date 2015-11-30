@@ -1,0 +1,17 @@
+/* CSS declarations go here */
+#map-canvas2 {
+	width: 1000px;
+	height: 500px;
+
+}
+
+.map-row {
+	height:100%;
+	width:100%;
+}/* CSS declarations go here */
+
+#map-canvas {
+	width: 1000px;
+	height: 500px;
+
+}
